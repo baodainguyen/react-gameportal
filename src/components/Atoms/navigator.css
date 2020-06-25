@@ -1,0 +1,85 @@
+.dnb-menu a {
+  font-size: 14px;
+}
+.dnb-hover-show .hover-show {
+  visibility: hidden;
+}
+.dnb-hover-show:hover .hover-show {
+  visibility: visible;
+}
+.color727274 {
+  color: #727274;
+}
+.hover-white:hover {
+  color: white !important;
+}
+[class*="bg-img-"] {
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  margin-right: 5px;
+}
+.bg-img-home {
+  width: 20px;
+  height: 22px;
+}
+.bg-img-game {
+  width: 32px;
+  height: 19px;
+}
+.bg-img-settings {
+  width: 24px;
+  height: 22px;
+}
+.bg-img-invest {
+  width: 22px;
+  height: 22px;
+}
+.bg-img-save {
+  width: 24px;
+  height: 22px;
+}
+.bg-img-search {
+  width: 24px;
+  height: 22px;
+}
+.bg-img-lang {
+  width: 24px;
+  height: 22px;
+}
+.bg1 {
+  background-color: #111111;
+  color: #3f3f3f;
+}
+.color0177bf {
+  color: #0177bf !important;
+}
+.dnbHidden {
+  display: none;
+}
+.dnbsignup {
+  min-width: 84px;
+}
+
+@media screen and (max-width: 1199px) {
+  .hide-onpad {
+    display: none;
+  }
+  .dnb-promo {
+    flex-direction: column;
+  }
+  .dnb-promo-side {
+    display: flex;
+    width: 100%;
+    padding-left: 0 !important;
+    padding-top: 10px;
+    justify-content: space-between;
+  }
+  .dnb-promo-side-item {
+    height: 154px;
+  }
+  .dnb-promo-side > * {
+    width: 32.6%;
+    margin-bottom: 0 !important;
+  }
+}

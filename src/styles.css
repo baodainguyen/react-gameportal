@@ -1,0 +1,24 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+@font-face {
+  font-family: "Proxima-Nova";
+  src: url("assets/font/Proxima-Nova.otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Proxima-Nova";
+  src: url("assets/font/Proxima-Nova-Regular.ttf");
+  font-weight: 400;
+}
+body {
+  font: 14px "Proxima-Nova", Futura, sans-serif;
+}
+.bg0177bf {
+  background-color: #0177bf;
+  color: white;
+}
+.dnb-loading {
+  height: 4px;
+}
