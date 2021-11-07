@@ -1,7 +1,7 @@
 # react-gameportal version 1.0.0
 
 ## Check latest npm version
-If you want to update latest: 
+If you want to update the latest: 
 ```
 npm install -g npm@latest
 ```
@@ -10,9 +10,9 @@ Or
 ```
 npm i -g npm@latest
  ```
-## Check node-modules in project folder (your-app).
+## Check node-modules in project's folder (your-app).
 
-If node_modules folder exist before you update latest npm version in project folder (your-app).
+If node_modules's folder existed before you update the latest npm version in project folder (your-app).
 
 Remove by cmd: 
 ```
@@ -28,7 +28,7 @@ Or
 ```
  npm i
  ```
-(note: install node_modules to build production and push on github to create github pages)
+(note: install the node_modules to build production and push on github to create github pages)
 
 ## Install github pages
 ``` 
@@ -57,7 +57,7 @@ git remote add origin git@github.com:[your-user-account/your-app (replace by you
 git clone git@github.com:[your-user-account/your-app]
 ```
 
-Copy all files from your project folder into your-app folder
+Copy all files from your project's folder into your-app folder
 
 ## Push your files on to github
 ```
