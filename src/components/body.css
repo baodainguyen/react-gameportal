@@ -7,27 +7,14 @@
 .pos-relative {
   position: relative;
 }
-.bottom0 {
-  bottom: 0;
-}
-.top0 {
-  top: 0;
-}
-.left0 {
-  left: 0;
-}
-.right0 {
-  right: 0;
-}
-.w30 {
-  width: 30%;
-}
-.w70 {
-  width: 70%;
-}
-.h86px {
-  height: 86px;
-}
+.bottom0 {  bottom: 0;}
+.top0 {  top: 0;}
+.left0 {  left: 0;}
+.right0 {  right: 0;}
+.w30 {  width: 30%;}
+.w100 {  width: 100%;}
+.w70 {  width: 70%;}
+.h86px {  height: 86px;}
 .w130px {
   width: 130px;
   max-width: 130px;
@@ -36,36 +23,16 @@
   width: 320px;
   min-width: 320px;
 }
-.w63 {
-  width: 63%;
-}
-.w58 {
-  width: 58%;
-}
-.w40 {
-  width: 40%;
-}
-.h200px {
-  height: 200px;
-}
-.h541px {
-  height: 541px;
-}
-.h175px {
-  height: 175px;
-}
-.h80px {
-  height: 80px;
-}
-.h130px {
-  height: 130px;
-}
-.h180px {
-  height: 180px;
-}
-.minw320px {
-  min-width: 320px;
-}
+.w63 {  width: 63%;}
+.w58 {  width: 58%;}
+.w40 {  width: 40%;}
+.h200px {  height: 200px;}
+.h541px {  height: 541px;}
+.h175px {  height: 175px;}
+.h80px {  height: 80px;}
+.h130px {  height: 130px;}
+.h180px {  height: 180px;}
+.minw320px {  min-width: 320px;}
 .bgwhite {
   background-color: white;
   color: #232321;

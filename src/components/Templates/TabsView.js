@@ -99,7 +99,7 @@ class Developer extends Component {
         <div className="d-flex align-items-center pr-3 pos-absolute h80px top0 right0">
           <img className="h-75" src={bg} alt={name} />
         </div>
-        <div className="d-flex h80px pos-absolute left0 top0">
+        <div className="d-flex h80px pos-absolute left0 top0 w100">
           <img className="w30 img-fit-cover" src={avatar} alt={name} />
           <div className="w70 bgblack86 pl-4 pt-3 text-left">
             <h6>{name}</h6>
