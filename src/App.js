@@ -7,9 +7,9 @@ import TabsView from "./components/Templates/TabsView";
 import SectionNews from "./components/Templates/SectionNews";
 import Footer from "./components/Templates/Footer";
 
-import "./styles.css";
+import './App.css';
 
-export default function App() {
+function App() {
   return (
     <div className="App">
       <div className="dnb-loading w-100 bg0177bf" />
@@ -23,3 +23,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App;

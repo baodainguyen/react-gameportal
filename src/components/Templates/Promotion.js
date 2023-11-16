@@ -13,11 +13,11 @@ class PaginationItem extends Component {
       <div className="pos-relative h541px">
         <img className="w-100 h541px img-fit-cover" src={bg} alt={head} />
         <div
-          className={`pos-absolute top0 right0 ${color} pl-5 pr-5 pt-1 pb-1`}
+          className={`pos-absolute top0 right0 ${color} ps-5 pe-5 pt-1 pb-1`}
         >
           {name}
         </div>
-        <div className="pos-absolute w-100 bottom0 left0 bgblack66 pl-2 pt-2 pb-5">
+        <div className="pos-absolute w-100 bottom0 left0 bgblack66 ps-2 pt-2 pb-5">
           <h4 className="text-left mb-0">{head}</h4>
           <p className="text-left mb-0">{text}</p>
         </div>
@@ -58,7 +58,7 @@ class SidebarItem extends Component {
           alt={tag}
         />
         <span
-          className={`pos-absolute ${color} top0 right0 pl-4 pr-4 pt-1 pb-1`}
+          className={`pos-absolute ${color} top0 right0 ps-4 pe-4 pt-1 pb-1`}
         >
           {name}
         </span>
@@ -73,7 +73,7 @@ class SidebarItem extends Component {
 class Sidebar extends Component {
   render() {
     return (
-      <div className="w320px pl-2 dnb-promo-side">
+      <div className="w320px ps-2 dnb-promo-side">
         {promotionSidebar.map(({ head, tag, bg }) => (
           <SidebarItem context={{ head, tag, bg }} />
         ))}
@@ -85,10 +85,10 @@ class Sidebar extends Component {
 export default class Promotion extends Component {
   render() {
     return (
-      <section class="bge">
-        <div class="container">
-          <div class="row pt-2">
-            <div class="col-12 d-flex dnb-promo">
+      <section className="bge">
+        <div className="container">
+          <div className="row pt-2">
+            <div className="col-12 d-flex dnb-promo">
               <Pagination />
               <Sidebar />
             </div>

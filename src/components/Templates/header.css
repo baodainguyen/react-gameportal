@@ -1,18 +1,30 @@
 .borderb-1d1d1f {
   border-bottom: 1px solid #1d1d1f;
 }
+
 .h48px {
   height: 48px;
 }
+
 .bg0c {
   background-color: #0c0c0c;
 }
+
 .bg1 {
   background-color: #111111;
-  color: #3f3f3f;
+  color: white;
 }
+.bg1.txt-input::placeholder {
+  color: white;
+}
+
 .btn-rck {
   background-repeat: no-repeat;
   height: 34px;
   width: 34px;
+}
+
+.btn-social:hover {
+  filter: brightness(3);
+  border-radius: 6px;
 }

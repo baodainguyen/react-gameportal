@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { footerListMap } from "../../assets";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { FormControl, InputGroup, Button } from "react-bootstrap";
+import { Form, InputGroup } from "react-bootstrap";
 import "../body.css";
 
 class ListMap extends Component {
@@ -32,23 +32,21 @@ class SiteMap extends Component {
           <ListMap context={el} key={`${el.id}_${el.head}`} />
         ))}
         <div className="col-12 col-sm-12 col-md-3 text-left">
-          <h6 className="text-white text-uppercase ml-1 mb-3">
+          <h6 className="text-white text-uppercase ms-1 mb-3">
             Subcribe To Newsletter
           </h6>
           <div>
             <InputGroup className="mb-3 round50 bg35 p-1">
-              <FormControl
+              <Form.Control
                 className="round50 border-0 bg35"
                 type="email"
                 placeholder="your email"
                 aria-label="your email"
                 aria-describedby="EmailNewsletter"
               />
-              <InputGroup.Append>
-                <button className="btn bg0292ce rounded-circle" type="submit">
+              <button className="btn bg0292ce rounded-circle" type="submit">
                   <FontAwesomeIcon icon={faEnvelope} />
                 </button>
-              </InputGroup.Append>
             </InputGroup>
           </div>
         </div>

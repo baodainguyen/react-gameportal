@@ -1,4 +1,4 @@
-# react-gameportal version 1.0.0
+# react-gameportal version 2.0.1
 
 ## Check latest npm version
 If you want to update the latest: 
@@ -16,7 +16,7 @@ If node_modules's folder existed before you update the latest npm version in pro
 
 Remove by cmd: 
 ```
-rm -rf node_modules
+rm -r node_modules
 ```
 
 ### Then re-install: 

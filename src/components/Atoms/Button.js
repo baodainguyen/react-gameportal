@@ -29,7 +29,7 @@ export class ButtonNoBorded extends Component {
   render() {
     return (
       <Button
-        className="btn bordered-0 rounded-0 ml-2"
+        className="btn bordered-0 rounded-0 ms-2"
         type="button"
         onClick={this.handleClick}
       >

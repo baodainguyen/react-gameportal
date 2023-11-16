@@ -18,17 +18,17 @@ export default class GameItem extends Component {
     const { name, price, img, href } = this.props.info;
 
     return (
-      <div className="pos-relative w130px mb-1">
+      <div className="pos-relative w150px rounded-2 overflow-hidden">
         <img
-          className="w130px h200px img-fit-cover"
+          className="w150px h200px img-fit-cover"
           src={img}
           alt=""
           onClick={this.onClickLogin}
         />
-        <div className="w130px pos-absolute bottom0 left0 pt-1 bgblack66">
+        <div className="w150px pos-absolute bottom0 left0 pt-1 bgblack66">
           <a className="text-white" href={href}>
-            <p className="text-left text-uppercase mb-0 pl-1 small">{name}</p>
-            <p className="text-left mb-0 pl-1 small">
+            <p className="text-left text-uppercase mb-0 ps-1 small">{name}</p>
+            <p className="text-left mb-0 ps-1 small">
               Price: <span className="color0177bf">{price}</span>
             </p>
           </a>
