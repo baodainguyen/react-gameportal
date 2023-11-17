@@ -71,12 +71,12 @@ function LeftSide() {
         <div className="mb-3">
           <Tabs id="uncontrolled-tab-example" activeKey={key} onSelect={onSelectTab}>
             <Tab className="borderr-dee2e6 pe-3 pt-3 text-left"
-              style={{ overflowY: 'auto', maxHeight: '500px', paddingBottom: '44px' }}
+              style={{ overflowY: 'auto', maxHeight: '500px' }}
               eventKey="enson" title="Enson oyunlarmiz" >
               {tabListPost.map((el, i) => i < max ? <Post context={el} /> : null)}
               {
-                max < tabListPost.length ? <a onClick={onLoadMore} style={{ bottom: '6px' }}
-                  className="btn bg0292ce rounded-0 position-absolute"
+                max < tabListPost.length ? <a onClick={onLoadMore}
+                  className="btn bg0292ce rounded-0"
                   href="http://showmoreTabs">Show more</a> : null
               }
             </Tab>
