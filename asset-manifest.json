@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-gameportal/static/css/main.36a04d83.css",
-    "main.js": "/react-gameportal/static/js/main.3cb96a5a.js",
+    "main.css": "/react-gameportal/static/css/main.528eccdb.css",
+    "main.js": "/react-gameportal/static/js/main.2901be87.js",
     "static/js/787.d4a5abea.chunk.js": "/react-gameportal/static/js/787.d4a5abea.chunk.js",
     "static/media/nv4.png": "/react-gameportal/static/media/nv4.29b4c90664cc056c5f46.png",
     "static/media/nv.png": "/react-gameportal/static/media/nv.6a05c7994270ebf88600.png",
@@ -19,12 +19,12 @@
     "static/media/Rstar.png": "/react-gameportal/static/media/Rstar.468cd5658cd74c7be448.png",
     "static/media/nv9.jpg": "/react-gameportal/static/media/nv9.dc0ddeb6cc54b012a9c9.jpg",
     "index.html": "/react-gameportal/index.html",
-    "main.36a04d83.css.map": "/react-gameportal/static/css/main.36a04d83.css.map",
-    "main.3cb96a5a.js.map": "/react-gameportal/static/js/main.3cb96a5a.js.map",
+    "main.528eccdb.css.map": "/react-gameportal/static/css/main.528eccdb.css.map",
+    "main.2901be87.js.map": "/react-gameportal/static/js/main.2901be87.js.map",
     "787.d4a5abea.chunk.js.map": "/react-gameportal/static/js/787.d4a5abea.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.36a04d83.css",
-    "static/js/main.3cb96a5a.js"
+    "static/css/main.528eccdb.css",
+    "static/js/main.2901be87.js"
   ]
 }
