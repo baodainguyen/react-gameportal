@@ -1,25 +1,30 @@
 {
   "files": {
-    "main.css": "/react-gameportal/static/css/main.48753ebe.css",
-    "main.js": "/react-gameportal/static/js/main.a3bf4568.js",
+    "main.css": "/react-gameportal/static/css/main.6f62aa96.css",
+    "main.js": "/react-gameportal/static/js/main.ca70ca0b.js",
     "static/js/787.d4a5abea.chunk.js": "/react-gameportal/static/js/787.d4a5abea.chunk.js",
     "static/media/nv4.png": "/react-gameportal/static/media/nv4.29b4c90664cc056c5f46.png",
     "static/media/nv.png": "/react-gameportal/static/media/nv.6a05c7994270ebf88600.png",
     "static/media/streammer.jpg": "/react-gameportal/static/media/streammer.c0e60fef7e7898af575b.jpg",
     "static/media/streammer2.jpg": "/react-gameportal/static/media/streammer2.a2ce80b6b68d52880738.jpg",
     "static/media/nv3.jpg": "/react-gameportal/static/media/nv3.2a54d2d00dfb97f2ab4b.jpg",
+    "static/media/nv5.jpg": "/react-gameportal/static/media/nv5.68a4cfee4587d9129feb.jpg",
+    "static/media/nv6.jpg": "/react-gameportal/static/media/nv6.16e39c721afc90be887c.jpg",
     "static/media/Proxima-Nova.otf": "/react-gameportal/static/media/Proxima-Nova.09394b2afc53828fe342.otf",
     "static/media/Proxima-Nova-Regular.ttf": "/react-gameportal/static/media/Proxima-Nova-Regular.fd587f5a8435ec062478.ttf",
+    "static/media/nv7.jpg": "/react-gameportal/static/media/nv7.67a5906e67b85bdd137e.jpg",
+    "static/media/nv8.jpg": "/react-gameportal/static/media/nv8.65c54bce7ea905fa4aac.jpg",
     "static/media/gamepromo.jpg": "/react-gameportal/static/media/gamepromo.5d4a74b7e1839df317ad.jpg",
     "static/media/nv2.jpg": "/react-gameportal/static/media/nv2.75d82356c422af77ff55.jpg",
     "static/media/Rstar.png": "/react-gameportal/static/media/Rstar.468cd5658cd74c7be448.png",
+    "static/media/nv9.jpg": "/react-gameportal/static/media/nv9.dc0ddeb6cc54b012a9c9.jpg",
     "index.html": "/react-gameportal/index.html",
-    "main.48753ebe.css.map": "/react-gameportal/static/css/main.48753ebe.css.map",
-    "main.a3bf4568.js.map": "/react-gameportal/static/js/main.a3bf4568.js.map",
+    "main.6f62aa96.css.map": "/react-gameportal/static/css/main.6f62aa96.css.map",
+    "main.ca70ca0b.js.map": "/react-gameportal/static/js/main.ca70ca0b.js.map",
     "787.d4a5abea.chunk.js.map": "/react-gameportal/static/js/787.d4a5abea.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.48753ebe.css",
-    "static/js/main.a3bf4568.js"
+    "static/css/main.6f62aa96.css",
+    "static/js/main.ca70ca0b.js"
   ]
 }
