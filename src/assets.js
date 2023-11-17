@@ -19,6 +19,11 @@ import bgNv from "./assets/img/bg/nv.png";
 import bgNv2 from "./assets/img/bg/nv2.jpg";
 import bgNv3 from "./assets/img/bg/nv3.jpg";
 import bgNv4 from "./assets/img/bg/nv4.png";
+import bgNv5 from "./assets/img/bg/nv5.jpg";
+import bgNv6 from "./assets/img/bg/nv6.jpg";
+import bgNv7 from "./assets/img/bg/nv7.jpg";
+import bgNv8 from "./assets/img/bg/nv8.jpg";
+import bgNv9 from "./assets/img/bg/nv9.jpg";
 import RStar from "./assets/img/bg/Rstar.png";
 import csgo from "./assets/img/bg/csgo.png";
 import streammer from "./assets/img/avatar/streammer.jpg";
@@ -80,21 +85,21 @@ export const listEvent = [
 ];
 export const newsPosts = [
   {
-    avatar: bgNv,
+    avatar: bgNv5,
     head: "How Good is Withcher 3: Blood & Wnine Realese on Stream",
     dateTime: "Jan 32, 2020 ago",
     text: `Ubinsoft's crown jewel of the holiday release seasong  first reactions for Ragnarok are in, and they're lookng good. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis`,
     link: "http://newsPost1"
   },
   {
-    avatar: bgNv2,
+    avatar: bgNv6,
     head: "How Good is Withcher 3: Blood & Wnine Realese on Stream",
     dateTime: "June 32, 2020 ago",
     text: `Ubinsoft's crown jewel of the holiday release seasong  first reactions for Ragnarok are in, and they're lookng good. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis`,
     link: "http://newsPost2"
   },
   {
-    avatar: bgNv3,
+    avatar: bgNv7,
     head:
       "How Good is Avenger 4: Blood & Wnine Realese on Stream e holiday release seasong  first reaction",
     dateTime: "March 32, 2020 ago",
@@ -103,13 +108,23 @@ export const newsPosts = [
   }
 ];
 
-export const gameItem = {
-  avatar: gamepromo,
-  name: "A Hat In Time",
-  star: 5,
-  rate: 4.7,
-  action: { name: "Tertibatcilar", href: "http://gotogame" }
-};
+export const gameItems = [
+  {
+    avatar: gamepromo, name: "A Hat In Time",
+    star: 4.8, rate: 4.7,
+    action: { name: "Tertibatcilar", href: "http://gotogame1" }
+  },
+  {
+    avatar: bgNv8, name: "Ping Awsome",
+    star: 4.5, rate: 3.6,
+    action: { name: "Go to Play", href: "http://gotogame2" }
+  },
+  {
+    avatar: bgNv9, name: "Dota2 Awsome",
+    star: 5, rate: 4.8,
+    action: { name: "Find Match", href: "http://gotogame3" }
+  },
+]
 export const tabListPost = [
   {
     avatar: bgNv,
@@ -120,7 +135,7 @@ export const tabListPost = [
     readmoreLink: "http://readmore1"
   },
   {
-    avatar: bgNv2,
+    avatar: bgNv9,
     head: "Aventer -  Rifst Reaction WTwitter Roundup",
     time: "2hrs ago",
     text: `The first reactions for Avenger habitant morbi tristique senectus et netus et malesuada fames ac turpis`,
@@ -157,83 +172,94 @@ export const latestGameList = [
   {
     id: 1,
     info: {
-      name: "Need For Speed",
-      price: "$49.86",
-      img: bgNv,
-      href: "http://needforspeed"
+      name: "Need For Speed", price: "$49.86", img: bgNv7, href: "http://needforspeed"
     },
     react: { seen: 200, like: 100, comment: "900" }
   },
   {
     id: 2,
     info: {
-      name: "Need For PUPG",
-      price: "$29.86",
-      img: bgNv2,
-      href: "http://pupg"
+      name: "Need For PUPG", price: "$29.86", img: bgNv6, href: "http://pupg"
     },
     react: { seen: 200, like: 100, comment: "1202" }
   },
   {
     id: 3,
     info: {
-      name: "Half life",
-      price: "$9.86",
-      img: bgNv3,
-      href: "http://hafllife"
+      name: "Half life", price: "$9.86", img: bgNv3, href: "http://hafllife"
     },
     react: { seen: 900, like: 600, comment: "1080" }
   },
   {
     id: 4,
     info: {
-      name: "LoL",
-      price: "$9.4",
-      img: bgNv4,
-      href: "http://lol"
+      name: "LoL", price: "$9.4", img: bgNv8, href: "http://lol"
     },
     react: { seen: 900, like: 600, comment: "1989" }
   },
   {
     id: 5,
     info: {
-      name: "Half life",
-      price: "$9.86",
-      img: bgNv3,
-      href: "http://0_5life"
+      name: "Half life", price: "$9.86", img: bgNv5, href: "http://0_5life"
     },
     react: { seen: 900, like: 600, comment: "1508" }
   },
   {
     id: 6,
     info: {
-      name: "Need For PUPG",
-      price: "$29.86",
-      img: bgNv2,
-      href: "http://pupg"
+      name: "Need For PUPG", price: "$29.86", img: bgNv2, href: "http://pupg"
     },
     react: { seen: 200, like: 100, comment: "1234" }
   },
   {
     id: 7,
     info: {
-      name: "Need For Speed",
-      price: "$49.86",
-      img: bgNv,
-      href: "http://needforspeed"
+      name: "Need For Speed", price: "$49.86", img: bgNv, href: "http://needforspeed"
     },
     react: { seen: 200, like: 100, comment: "cmt Speed" }
   },
   {
     id: 8,
     info: {
-      name: "LoL",
-      price: "$9.4",
-      img: bgNv4,
-      href: "http://lol"
+      name: "LoL", price: "$9.4", img: bgNv4, href: "http://lol"
     },
     react: { seen: 900, like: 600, comment: "6790" }
-  }
+  },
+  {
+    id: 9,
+    info: {
+      name: "Need For Speed", price: "$49.86", img: bgNv7, href: "http://needforspeed"
+    },
+    react: { seen: 200, like: 100, comment: "900" }
+  },
+  {
+    id: 10,
+    info: {
+      name: "Need For PUPG", price: "$29.86", img: bgNv6, href: "http://pupg"
+    },
+    react: { seen: 200, like: 100, comment: "1202" }
+  },
+  {
+    id: 13,
+    info: {
+      name: "Half life", price: "$9.86", img: bgNv3, href: "http://hafllife"
+    },
+    react: { seen: 900, like: 600, comment: "1080" }
+  },
+  {
+    id: 14,
+    info: {
+      name: "LoL", price: "$9.4", img: bgNv8, href: "http://lol"
+    },
+    react: { seen: 900, like: 600, comment: "1989" }
+  },
+  {
+    id: 15,
+    info: {
+      name: "Half life", price: "$9.86", img: bgNv5, href: "http://0_5life"
+    },
+    react: { seen: 900, like: 600, comment: "1508" }
+  },
 ];
 
 export const icons = {
@@ -247,7 +273,7 @@ export const pagination = [
     head: "Azerbaycanin en mehsur oyununu teqdim edirik",
     text:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do elusmod tempor incididunt ut labore et",
-    bg: bgNv,
+    bg: bgNv5,
     tag: { name: "Oyliniar", color: "bgd55401" },
     active: true
   },
@@ -255,7 +281,7 @@ export const pagination = [
     head: "Azerbaycanin en mehsur oyununu teqdim edirik",
     text:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do elusmod tempor incididunt ut labore et",
-    bg: bgNv2,
+    bg: bgNv3,
     tag: { name: "Tag 2", color: "bg9b58b5" }
   },
   {
@@ -264,6 +290,28 @@ export const pagination = [
       "Lorem ipsum dolor sit amet, c sed do elusmod tempor incididunt ut labore et",
     bg: bgNv4,
     tag: { name: "Tag 3", color: "bgefc50f" }
+  },
+  {
+    head: "Azerbaycanin en mehsur oyununu teqdim edirik",
+    text:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do elusmod tempor incididunt ut labore et",
+    bg: bgNv,
+    tag: { name: "Oyliniar", color: "bgd55401" },
+    active: true
+  },
+  {
+    head: "Azerbaycanin en mehsur oyununu teqdim edirik",
+    text:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do elusmod tempor incididunt ut labore et",
+    bg: bgNv3,
+    tag: { name: "Tag 2", color: "bg9b58b5" }
+  },
+  {
+    head: "Azerbaycanin en mehsu2 ik",
+    text:
+      "Lorem ipsum dolor sit amet, c sed do elusmod tempor incididunt ut labore et",
+    bg: bgNv7,
+    tag: { name: "Tag 3", color: "bgefc50f" }
   }
 ];
 
@@ -271,7 +319,7 @@ export const promotionSidebar = [
   {
     head: "Bandai Namco announce God Eater 3: Giant",
     tag: { color: "bg9b58b5", name: "Icma" },
-    bg: bgNv2
+    bg: bgNv
   },
   {
     head: "Namco announce God Eater Giant Bandai",

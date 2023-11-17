@@ -18,7 +18,7 @@ export default class GameItem extends Component {
     const { name, price, img, href } = this.props.info;
 
     return (
-      <div className="pos-relative w150px rounded-2 overflow-hidden">
+      <div className="pos-relative w150px rounded-2 overflow-hidden me-2 mb-2">
         <img
           className="w150px h200px img-fit-cover"
           src={img}

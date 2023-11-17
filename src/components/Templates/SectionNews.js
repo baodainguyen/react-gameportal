@@ -11,11 +11,11 @@ class Post extends Component {
           <img className="w-100 h180px img-fit-cover" src={avatar} alt={head} />
         </div>
         <div className="text-left ms-4 pt-0 pe-3 w58">
-          <div className="mb-1">
+          <div className="mb-1 text-start">
             <h6 className="font-weight-bold mb-0 lineclamp2">{head}</h6>
             <p className="d-inline-block color0177bf mb-2 small">{dateTime}</p>
           </div>
-          <p className="mb-2 lineclamp3">{text}</p>
+          <p className="mb-2 lineclamp3 text-start">{text}</p>
           <div className="d-flex justify-content-between">
             <a className="color0177bf" href={link}>
               Read More &#187;
