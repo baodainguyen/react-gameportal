@@ -25,7 +25,7 @@ class Post extends Component {
     return (
       <article className="d-flex bgwhite h130px mb-3">
         <div className="w30 me-4 h130px">
-          <img className="w-100 h130px img-fit-cover" src={avatar} alt={head} style={{objectPosition: `left top`}}/>
+          <img className="w-100 h130px img-fit-cover" src={avatar} alt={head} style={{ objectPosition: `left top` }} />
         </div>
         <div className="ms-4 pt-3 pe-3 w63 text-left">
           <div className="text-start">
@@ -48,31 +48,48 @@ class Post extends Component {
   }
 }
 
-class LeftSide extends Component {
-  render() {
-    return (
-      <section className="flex-grow-1 minw320px">
-        <div className="pe-3">
-          <div className="mb-3">
-            <Tabs defaultActiveKey="enson" id="uncontrolled-tab-example">
-              <Tab className="borderr-dee2e6 pe-3 pt-3 text-left"
-                eventKey="enson" title="Enson oyunlarmiz" >
-                {tabListPost.map(el => <Post context={el} />)}
-                <a onClick={e => e.preventDefault()}
-                  className="btn bg0292ce rounded-0"
-                  href="http://showmoreTabs">Show more</a>
-              </Tab>
-              <Tab eventKey="mahsur" title="Mahsur Oyunlar" className="colorab pt-3">
-                <div style={{ backgroundColor: '#263038', height: '300px', paddingTop: '36px' }}>
-                  <span className="loader"></span></div>
-              </Tab>
-              <Tab eventKey="videolar" title="Videolar" disabled></Tab>
-            </Tabs>
-          </div>
-        </div>
-      </section>
-    )
+function LeftSide() {
+  const [max, setMax] = useState(3)
+  const [key, setKey] = useState('enson');
+
+  const onLoadMore = (e) => {
+    e.preventDefault()
+    if (max >= tabListPost.length) return
+
+    setMax(max + 1)
   }
+  const onSelectTab = (k) => {
+    setKey(k)
+    if (k !== 'enson') {
+      setMax(3)
+    }
+  }
+
+  return (
+    <section className="flex-grow-1 minw320px">
+      <div className="pe-3">
+        <div className="mb-3">
+          <Tabs id="uncontrolled-tab-example" activeKey={key} onSelect={onSelectTab}>
+            <Tab className="borderr-dee2e6 pe-3 pt-3 text-left"
+              style={{ overflowY: 'auto', maxHeight: '500px', paddingBottom: '44px' }}
+              eventKey="enson" title="Enson oyunlarmiz" >
+              {tabListPost.map((el, i) => i < max ? <Post context={el} /> : null)}
+              {
+                max < tabListPost.length ? <a onClick={onLoadMore} style={{ bottom: '6px' }}
+                  className="btn bg0292ce rounded-0 position-absolute"
+                  href="http://showmoreTabs">Show more</a> : null
+              }
+            </Tab>
+            <Tab eventKey="mahsur" title="Mahsur Oyunlar" className="colorab pt-3">
+              <div style={{ backgroundColor: '#263038', height: '300px', paddingTop: '36px' }}>
+                <span className="loader"></span></div>
+            </Tab>
+            <Tab eventKey="videolar" title="Videolar" disabled></Tab>
+          </Tabs>
+        </div>
+      </div>
+    </section>
+  )
 }
 
 class Developer extends Component {

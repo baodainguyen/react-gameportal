@@ -128,7 +128,8 @@
 .round50 {
   border-radius: 90px;
 }
-
+.tab-content {position: relative;}
+.btn:hover {background-color: #198754;color: white;}
 @media screen and (max-width: 1199px) {
   .hide-onpad {
     display: none;

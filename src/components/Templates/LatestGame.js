@@ -1,6 +1,6 @@
-import React, { useRef, useState } from "react";
-import { Modal, Button } from 'react-bootstrap';
 import "bootstrap/dist/css/bootstrap.min.css";
+import React, { useRef, useState } from "react";
+import { Modal } from 'react-bootstrap';
 import {
   faChevronRight,
   faChevronLeft
@@ -62,7 +62,7 @@ export default function LatestGame() {
             ))}</div>
         </div>
       </div>
-      <Modal show={show} onHide={handleClose} fullscreen={true}
+      <Modal show={show} onHide={handleClose} size="xl"
         aria-labelledby="contained-modal-title-vcenter"
         centered>
         <Modal.Header closeButton>

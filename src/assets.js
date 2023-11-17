@@ -92,14 +92,36 @@ export const newsPosts = [
     link: "http://newsPost1"
   },
   {
-    avatar: bgNv6,
+    avatar: bgNv7,
+    head:
+      "How Good is Avenger 4: Blood & Wnine Realese on Stream e holiday release seasong  first reaction",
+    dateTime: "March 32, 2020 ago",
+    text: `They're lookng good. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis`,
+    link: "http://newsPost3"
+  },
+  {
+    avatar: bgNv8,
+    head: "How Good is Withcher 3: Blood & Wnine Realese on Stream",
+    dateTime: "Jan 32, 2020 ago",
+    text: `Ubinsoft's crown jewel of the holiday release seasong  first reactions for Ragnarok are in, and they're lookng good. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis`,
+    link: "http://newsPost1"
+  },
+  {
+    avatar: bgNv3,
+    head: "How Good is Withcher 3: Blood & Wnine Realese on Stream",
+    dateTime: "Jan 32, 2020 ago",
+    text: `Ubinsoft's crown jewel of the holiday release seasong  first reactions for Ragnarok are in, and they're lookng good. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis`,
+    link: "http://newsPost1"
+  },
+  {
+    avatar: bgNv2,
     head: "How Good is Withcher 3: Blood & Wnine Realese on Stream",
     dateTime: "June 32, 2020 ago",
     text: `Ubinsoft's crown jewel of the holiday release seasong  first reactions for Ragnarok are in, and they're lookng good. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis`,
     link: "http://newsPost2"
   },
   {
-    avatar: bgNv7,
+    avatar: bgNv,
     head:
       "How Good is Avenger 4: Blood & Wnine Realese on Stream e holiday release seasong  first reaction",
     dateTime: "March 32, 2020 ago",
@@ -145,7 +167,55 @@ export const tabListPost = [
   {
     avatar: bgNv3,
     head: "Thor: Ragnarok - Rifst Reaction WTwitter Roundup",
-    time: "2hrs ago",
+    time: "3hrs ago",
+    text: `Lookng good Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis`,
+    cComment: 70,
+    readmoreLink: "http://readmore3"
+  },
+  {
+    avatar: bgNv8,
+    head: "Thor: Ragnarok - Rifst Reaction WTwitter Roundup",
+    time: "1hr ago",
+    text: `The first reactions for Ragnarok are in, and they're lookng good Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis`,
+    cComment: 270,
+    readmoreLink: "http://readmore1"
+  },
+  {
+    avatar: bgNv7,
+    head: "Aventer -  Rifst Reaction WTwitter Roundup",
+    time: "4hrs ago",
+    text: `The first reactions for Avenger habitant morbi tristique senectus et netus et malesuada fames ac turpis`,
+    cComment: 570,
+    readmoreLink: "http://readmore2"
+  },
+  {
+    avatar: bgNv6,
+    head: "Thor: Ragnarok - Rifst Reaction WTwitter Roundup",
+    time: "6hrs ago",
+    text: `Lookng good Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis`,
+    cComment: 70,
+    readmoreLink: "http://readmore3"
+  },
+  {
+    avatar: bgNv8,
+    head: "Thor: Ragnarok - Rifst Reaction WTwitter Roundup",
+    time: "1hr ago",
+    text: `The first reactions for Ragnarok are in, and they're lookng good Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis`,
+    cComment: 270,
+    readmoreLink: "http://readmore1"
+  },
+  {
+    avatar: bgNv7,
+    head: "Aventer -  Rifst Reaction WTwitter Roundup",
+    time: "4hrs ago",
+    text: `The first reactions for Avenger habitant morbi tristique senectus et netus et malesuada fames ac turpis`,
+    cComment: 570,
+    readmoreLink: "http://readmore2"
+  },
+  {
+    avatar: bgNv6,
+    head: "Thor: Ragnarok - Rifst Reaction WTwitter Roundup",
+    time: "6hrs ago",
     text: `Lookng good Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis`,
     cComment: 70,
     readmoreLink: "http://readmore3"

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useRef } from "react";
 import { Form, Col, Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { socialLink, rocket } from "../../assets";
@@ -27,10 +27,15 @@ class SocialLink extends Component {
   }
 }
 
-export default function Header() {
-  const onClickLogin = (e) => {
-    e.preventDefault();
-    console.log("onclick to login");
+export default function Header(props) {
+  const refUserName = useRef(null)
+  const user = props.user
+
+  const onLogin = (e) => {
+    let name = refUserName.current.value
+    name = name.trim()
+    if (name !== '') props.onLogin(e, name)
+    else props.onLogin(e, 'Guest')
   }
   return (
     <div>
@@ -38,33 +43,37 @@ export default function Header() {
         <div className="container d-flex justify-content-between align-items-center h48px">
           <SocialLink />
           <div className="d-flex">
-            <Form>
-              <Form.Group className="align-items-center">
-                <Row>
-                  <Col xs="auto" className="hide-onfone px-0">
-                    <Form.Control
-                      placeholder="First name"
-                      className="rounded-0 bordered-0 bg1 txt-input"
-                    />
-                  </Col>
-                  <Col xs="auto" className="hide-onfone px-1">
-                    <Form.Control
-                      placeholder="Password"
-                      type="password"
-                      className="rounded-0 bordered-0 bg1 txt-input"
-                    />
-                  </Col>
-                  <Col xs="auto" className="ps-0">
-                    <button
-                      style={{ backgroundImage: `url(${rocket.src})` }}
-                      className="btn btn-rck bordered-0 rounded-0"
-                      type="button"
-                      onClick={(e) => onClickLogin(e)}
-                    />
-                  </Col>
-                </Row>
-              </Form.Group>
-            </Form>
+            {
+              user == null ? <Form>
+                <Form.Group className="align-items-center">
+                  <Row>
+                    <Col xs="auto" className="hide-onfone px-0">
+                      <Form.Control ref={refUserName}
+                        className="rounded-0 bordered-0 bg1 txt-input"
+                        placeholder="First name" />
+                    </Col>
+                    <Col xs="auto" className="hide-onfone px-1">
+                      <Form.Control
+                        placeholder="Password"
+                        className="rounded-0 bordered-0 bg1 txt-input"
+                        type="password" />
+                    </Col>
+                    <Col xs="auto" className="ps-0">
+                      <button className="btn btn-rck bordered-0 rounded-0"
+                        style={{ backgroundImage: `url(${rocket.src})` }}
+                        onClick={onLogin}
+                        type="button" />
+                    </Col>
+                  </Row>
+                </Form.Group>
+              </Form> : <div>
+                <strong className="text-white">Welcome {user}!</strong>
+                <button className="btn bordered-0 rounded-0"
+                  onClick={props.onLogOut}
+                  type="button" >Log Out</button>
+              </div>
+            }
+
           </div>
         </div>
       </section>

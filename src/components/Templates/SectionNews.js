@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import { newsPosts, listEvent } from "../../assets";
 import "../body.css";
 
@@ -8,7 +8,8 @@ class Post extends Component {
     return (
       <article className="d-flex h180px mb-3">
         <div className="w40 me-4 h180px">
-          <img className="w-100 h180px img-fit-cover" src={avatar} alt={head} />
+          <img className="w-100 h180px img-fit-cover" src={avatar} alt={head}
+            style={{ objectPosition: 'left top' }} />
         </div>
         <div className="text-left ms-4 pt-0 pe-3 w58">
           <div className="mb-1 text-start">
@@ -27,41 +28,47 @@ class Post extends Component {
   }
 }
 
-class LeftSide extends Component {
-  render() {
-    return (
-      <section className="flex-grow-1 minw320px">
-        <div className="pe-2">
-          <div className="text-left">
-            <h4>Bizim Bloqdan</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adspiscing edit, sed do
-            </p>
-          </div>
-          <div className="text-uppercase text-left font-weight-bold">
-            <span className="me-3 color727274">En Cox Baxilan</span>
-            <button onClick={e => e.preventDefault()}
-              className="btn round50 border0d8fc3 text-uppercase text-white font-weight-bold"
-              type="button" >
-              <p className="mt-1 mb-1 ms-3 me-3 small">En Son</p>
-            </button>
-          </div>
-          <div className="pt-3">
-            {newsPosts.map(el => (
-              <Post context={el} />
-            ))}
-          </div>
-          <div className="pt-3 text-left">
-            <a onClick={e => e.preventDefault()}
+function LeftSide() {
+  const [max, setMax] = useState(3)
+  const onLoadMore = (e) => {
+    e.preventDefault()
+    if (max >= newsPosts.length) return
+
+    setMax(max + 1)
+  }
+
+  return (
+    <section className="flex-grow-1 minw320px">
+      <div className="pe-2">
+        <div className="text-left">
+          <h4>Bizim Bloqdan</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adspiscing edit, sed do
+          </p>
+        </div>
+        <div className="text-uppercase text-left font-weight-bold">
+          <span className="me-3 color727274">En Cox Baxilan</span>
+          <button onClick={e => e.preventDefault()}
+            className="btn round50 border0d8fc3 text-uppercase text-white font-weight-bold"
+            type="button" >
+            <p className="mt-1 mb-1 ms-3 me-3 small">En Son</p>
+          </button>
+        </div>
+        <div className="pt-3" style={{ maxHeight: '604px', overflowY: 'auto' }}>
+          {newsPosts.map((el, i) => i < max ? <Post context={el} /> : null)}
+        </div>
+        <div className="pt-3 text-left">
+          {
+            max < newsPosts.length ? <a onClick={onLoadMore}
               className="btn round50 border0d8fc3 text-uppercase text-white"
               href="http://MoreAricles">
               <p className="mt-1 mb-1 ms-3 me-3 small">More Aricles</p>
-            </a>
-          </div>
+            </a> : null
+          }
         </div>
-      </section>
-    );
-  }
+      </div>
+    </section>
+  )
 }
 class EventItem extends Component {
   render() {
