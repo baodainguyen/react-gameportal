@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { Component, useState, useMemo } from "react";
 import { Tabs, Tab } from "react-bootstrap";
 import {
   faStar, faClock,
@@ -73,7 +73,7 @@ function LeftSide() {
             <Tab className="borderr-dee2e6 pe-3 pt-3 text-left"
               style={{ overflowY: 'auto', maxHeight: '500px' }}
               eventKey="enson" title="Enson oyunlarmiz" >
-              {tabListPost.map((el, i) => i < max ? <Post context={el} /> : null)}
+              {tabListPost.map((el, i) => i < max ? <Post context={el} key={`lst-post-${i}`} /> : null)}
               {
                 max < tabListPost.length ? <a onClick={onLoadMore}
                   className="btn bg0292ce rounded-0"
@@ -92,40 +92,52 @@ function LeftSide() {
   )
 }
 
-class Developer extends Component {
-  render() {
-    const { avatar, bg, name, rate } = this.props.context;
-    const rateIcons = [];
-    for (let i = 0; i < rate; i++) {
-      rateIcons.push(<FontAwesomeIcon icon={faStar} />);
-    }
+function Developer(props) {
+  const rageIcons = useMemo(
+    () => {
+      const rateIcons = [];
+      for (let i = 0; i < props.context.rate; i++) {
+        rateIcons.push(<FontAwesomeIcon icon={faStar} key={`rate-icon-${i}`} />);
+      }
+      return rateIcons
+    },
+    [props.context.rate]
+  )
 
-    return (
-      <div className="pos-relative h80px mt-3">
-        <div className="d-flex align-items-center pe-3 pos-absolute h80px top0 right0">
-          <img className="h-75" src={bg} alt={name} />
-        </div>
-        <div className="d-flex h80px pos-absolute left0 top0 w100">
-          <img className="w30 img-fit-cover" src={avatar} alt={name} />
-          <div className="w70 bgblack86 ps-4 pt-3 text-left">
-            <h6>{name}</h6>
-            <span className="colorf39813">{rateIcons}</span>
-          </div>
+  return (
+    <div className="pos-relative h80px mt-3">
+      <div className="d-flex align-items-center pe-3 pos-absolute h80px top0 right0">
+        <img className="h-75" src={props.context.bg} alt={props.context.name} />
+      </div>
+      <div className="d-flex h80px pos-absolute left0 top0 w100">
+        <img className="w30 img-fit-cover"
+          src={props.context.avatar} alt={props.context.name} />
+        <div className="w70 bgblack86 ps-4 pt-3 text-left">
+          <h6>{props.context.name}</h6>
+          <span className="colorf39813">{rageIcons}</span>
         </div>
       </div>
-    );
-  }
+    </div>
+  )
 }
+
 function ListGameItem(props) {
   const listGame = props.context;
   const [index, setIndex] = useState(0)
-  const getStart = (star) => {
-    const startIcons = [];
-    for (let i = 0; i < star; i++) {
-      startIcons.push(<FontAwesomeIcon icon={faStar} />);
-    }
-    return startIcons
-  }
+
+  const starstMem = useMemo(
+    () => {
+      const star = Math.round(listGame[index].star)
+      const startIcons = [];
+      for (let i = 0; i < star; i++) {
+        startIcons.push(<FontAwesomeIcon icon={faStar}
+          key={`start-icon-${i}`} />);
+      }
+      return startIcons
+    },
+    [index, listGame]
+  )
+
   const onNextGame = (e) => {
     if (listGame.length - 1 <= index) return
     setIndex(index + 1)
@@ -146,7 +158,7 @@ function ListGameItem(props) {
           <div className="ps-2 pt-2">
             <h5 className="font-weight-bold">{listGame[index].name}</h5>
             <div className="mb-3 mt-3">
-              <span className="colorf39813">{getStart(listGame[index].star)}</span>
+              <span className="colorf39813">{starstMem}</span>
               <span className="colorab">{listGame[index].rate}</span>
             </div>
             <a className="btn bg0292ce rounded-0"
@@ -173,7 +185,7 @@ class RightSide extends Component {
           Tertibatcilar
         </a>
         <div className="mb-5">
-          {developers.map(el => <Developer context={el} />)}
+          {developers.map((el, i) => <Developer context={el} key={`list-dev-${i}`} />)}
           <a className="btn btn-block rounded-0 borderb4bbc1 text-uppercase mt-3"
             onClick={e => e.preventDefault()}
             href="http://ViewDevelopers">View Developers</a>

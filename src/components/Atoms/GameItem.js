@@ -23,7 +23,7 @@ export default class GameItem extends Component {
           className="w150px h200px img-fit-cover"
           src={img}
           alt=""
-          onClick={this.onClickLogin}
+          onClick={this.onClick}
         />
         <div className="w150px pos-absolute bottom0 left0 pt-1 bgblack66">
           <a className="text-white" href={href}>

@@ -133,12 +133,12 @@ export const newsPosts = [
 export const gameItems = [
   {
     avatar: gamepromo, name: "A Hat In Time",
-    star: 4.8, rate: 4.7,
+    star: 4.2, rate: 4.7,
     action: { name: "Tertibatcilar", href: "http://gotogame1" }
   },
   {
     avatar: bgNv8, name: "Ping Awsome",
-    star: 4.5, rate: 3.6,
+    star: 3.3, rate: 3.6,
     action: { name: "Go to Play", href: "http://gotogame2" }
   },
   {
@@ -344,8 +344,7 @@ export const pagination = [
     text:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do elusmod tempor incididunt ut labore et",
     bg: bgNv5,
-    tag: { name: "Oyliniar", color: "bgd55401" },
-    active: true
+    tag: { name: "Oyliniar", color: "bgd55401" }
   },
   {
     head: "Azerbaycanin en mehsur oyununu teqdim edirik",
@@ -359,15 +358,15 @@ export const pagination = [
     text:
       "Lorem ipsum dolor sit amet, c sed do elusmod tempor incididunt ut labore et",
     bg: bgNv4,
-    tag: { name: "Tag 3", color: "bgefc50f" }
+    tag: { name: "Tag 3", color: "bgefc50f" },
+    active: true
   },
   {
     head: "Azerbaycanin en mehsur oyununu teqdim edirik",
     text:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do elusmod tempor incididunt ut labore et",
     bg: bgNv,
-    tag: { name: "Oyliniar", color: "bgd55401" },
-    active: true
+    tag: { name: "Oyliniar", color: "bgd55401" }
   },
   {
     head: "Azerbaycanin en mehsur oyununu teqdim edirik",

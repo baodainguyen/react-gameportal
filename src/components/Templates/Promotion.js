@@ -34,8 +34,8 @@ class Pagination extends Component {
     return (
       <div className="flex-grow-1 minw320px" ref={this.wrapper}>
         <Carousel className="h-100 w-100">
-          {pagination.map(({ head, text, bg, tag, active }) => (
-            <Carousel.Item>
+          {pagination.map(({ head, text, bg, tag, active }, i) => (
+            <Carousel.Item key={`pagenation-${i}`}>
               <PaginationItem context={{ head, text, bg, tag }} />
             </Carousel.Item>
           ))}
@@ -74,8 +74,8 @@ class Sidebar extends Component {
   render() {
     return (
       <div className="w320px ps-2 dnb-promo-side">
-        {promotionSidebar.map(({ head, tag, bg }) => (
-          <SidebarItem context={{ head, tag, bg }} />
+        {promotionSidebar.map(({ head, tag, bg }, i) => (
+          <SidebarItem context={{ head, tag, bg }} key={`sidebar-${i}`}/>
         ))}
       </div>
     );

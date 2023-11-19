@@ -55,7 +55,7 @@ function LeftSide() {
           </button>
         </div>
         <div className="pt-3" style={{ maxHeight: '604px', overflowY: 'auto' }}>
-          {newsPosts.map((el, i) => i < max ? <Post context={el} /> : null)}
+          {newsPosts.map((el, i) => i < max ? <Post context={el} key={`new-post-${i}`} /> : null)}
         </div>
         <div className="pt-3 text-left">
           {
@@ -106,9 +106,7 @@ class RightSide extends Component {
           </p>
         </div>
         <div className="pt-1">
-          {listEvent.map(el => (
-            <EventItem context={el} />
-          ))}
+          {listEvent.map((el, i) => <EventItem context={el} key={`list-event-${i}`} />)}
         </div>
         <div className="text-center pt-3">
           <a onClick={e => e.preventDefault()}
